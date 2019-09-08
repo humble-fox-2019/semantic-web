@@ -1,0 +1,92 @@
+ul.navigation{
+    padding:20px;
+    background-color: black;
+    margin-top: 0vh;
+}
+
+ul.navigation li{
+    display: inline-block;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul.navigation li.search{
+    float: right;
+}
+
+body{
+    align-content: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    background-image: url(https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/john-wick-31.jpg);
+}
+
+div.main {
+    padding: 0% 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+    top: 7vh;
+    bottom: -5;
+    z-index: -1;
+    background-color: white;
+}
+
+h1 {
+    text-align: left;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+ul.pages{
+    margin-left:60%;
+}
+
+ul.pages li{
+    display: inline-block;
+}
+
+ul.pages li.active-page{
+    color: white;
+    background-color: black;
+}
+
+
+table thead tr th{
+   padding: 2px 20px;
+}
+
+table tbody tr td{
+    padding: 5px 0px;
+ }
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
