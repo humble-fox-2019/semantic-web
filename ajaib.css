@@ -1,0 +1,67 @@
+body {
+    background-color: RGB(31, 38, 59);
+    text-align: center;
+}
+
+.kanjengdimas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanjengdimas img {
+    width: 400px;
+    height: 400px;
+}
+
+.header-container {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #34435E
+}
+
+.header-container h6 {
+    font-size: 30px;
+    margin-top: -20px
+}
+
+.ramalan-text-container {
+    border: 5px solid #34435E;
+    border-radius: 5px;
+    width: 30%;
+    background-color: grey;
+    color: white;
+    margin: auto
+}
+
+#ramalan-text {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-container img {
+    border: 3px solid purple;
+    /* margin: 25px; */
+}
+
+.quotes {
+    margin-top: 50px;
+}
+
+.fortune-btn {
+    margin: 15px;
+}
+
+.fortune-btn button {
+    height: 50px;
+    width: 150px;
+    font-size: 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 2px dotted #34435E;
+    background-color: rebeccapurple;
+    cursor: pointer;
+}
