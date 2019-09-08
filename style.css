@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darkorange;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+
+footer {
+    background-color: darkorange;
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    color: white;
+    padding: 10%;
+}
+form h3 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+textarea {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: none;
+}
+img{
+    width: 100%;
+}
+.contact-us {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid orange;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.contact-us:hover {
+  background-color: orange;
+}
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.content {
+    padding-top: 15%;
+    width: 50%;
+
+}
+.headline {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: orange;
+    
+}
+.sub-headline {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.small {
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.btn { 
+    margin-top: 20px;
+    border: 4px solid orange;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+.btn:hover{
+    background-color: orange;
+    color: black;
+}
+.event-headline {
+    float: left;
+    padding-bottom: 20px;
+}
+.slideShow-btn {
+    float:right;
+    padding: 20px;
+}
+.slideShow-btn button {
+    border: none;
+    font-size: 30px;
+    color: orange;
+    padding: 0 20px;
+    outline: none;
+}
+.slideShow-btn button:hover {
+    color: red;
+}
+.mySlides {
+    display:none;
+}
+.slides {
+    padding: 30px;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.footer-content{
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center
+}
+#head-bg {
+    background-image: url('./Assets/head-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 30px;
+}
