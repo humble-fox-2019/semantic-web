@@ -1,0 +1,35 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    margin-top: 5vh;
+    display: grid;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 3fr;
+    overflow: scroll;
+
+}
+.wrapper11 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.secondPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+.navbar {
+    position: absolute;
+    right: 5vw;
+    top: 1vh;
+}
+.navbar li {
+    display: inline-block;
+    margin-left: 3vw;
+}

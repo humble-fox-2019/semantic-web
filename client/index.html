@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="917807764644-qqiq87prj40peut9dhnmb20et2j9k0bu.apps.googleusercontent.com">
+    <link rel="stylesheet" href="./css/loginbox.css">
+    <link rel="stylesheet" href="./css/css.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!---->
+    
+    <title>Help Your Company</title>
+</head>
+<body>  
+    
+    <div class="firstPage" style="display: none;">
+        <p class="errorForm" style="color: red; visibility: hidden"></p>
+        <h5 id="success" style="display: none">Successfully registered your Account</h5>
+        <!--register-->
+        <form action="" id="registerForm" style="display: none" method="post">
+            Username
+            <input type="text" name="username" id="usernameRegister">
+            Password
+            <input type="password" name="password" id="passwordRegister">
+            Verify password
+            <input type="password" name="password" id="passwordRegisterVerify">
+            Email
+            <input type="email" name="email" id="emailRegister">
+            <a href="#" onclick="register()">Submit</a>
+        </form>
+        <!--login-->
+        
+        <form action=""  id="loginForm" method="post">
+            Email
+            <input type="email" name="email" id="emailLogin">
+            Password
+            <input type="password" name="password" id="passwordLogin">
+            <a href="#" onclick="loginForm()">Submit</a>
+        </form>
+        
+        <a href="#" id="doRegister" onclick="iWantRegister()">Create an account</a>
+        <a href="#" id="skipRegister" onclick="iWantLogin()">Have an account?</a>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    
+    </div>
+    
+    <div class="secondPage">
+        <ul class="navbar">
+            <li>
+                <a href="#" id="openRegisterCompany" onclick="openRegisterCompany()">Register new Company</a>
+            </li>
+            <li>
+                <a href="#" id="logout" onclick="logout()">Sign out</a>
+            </li>
+        </ul>
+        <h2 id="welcome"></h2>
+        <div class="wrapper">
+            <div class="company">
+                <div class="wrapper11">
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="wrapper12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thirdPage" style="display: none;">
+        <div class="registerCompany"  style="display: none;">
+            <form action="">
+                <label for="nameCompany">Company name</label>
+                <input type="text" id="nameCompany">
+                <label for="addressCompany">Company address</label>
+                <input type="text" id="addressCompany">
+                <a href="#" onclick="registerCompany()">Submit</a>
+            </form>
+        </div>
+        <div class="editCompany" style="display: none;">
+                <label for="nameCompanyEdit">Company name edit</label>
+                <input type="text" id="nameCompanyEdit">
+                <label for="addressCompanyEdit">Company address edit</label>
+                <input type="text" id="addressCompanyEdit">
+                <a href="#" id="editCompanySubmit">Submit</a>
+        </div>
+        <div class="registerItem"  style="display: none;">
+
+        </div>
+        <div class="editItem"  style="display: none;">
+            
+        </div>
+
+    </div>
+    <script src="./js/company.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="./js/login.js"></script>
+    <script>
+         
+         $(document).ready(function(){
+            
+            console.log('masuk')
+            refreshPage()
+
+        })   
+        function refreshPage(){
+                if(localStorage.getItem('token')){
+                    $('.firstPage').hide()
+                    localStorage.removeItem('token')
+                }else{
+                    $('.secondPage').hide()
+                    $('#logout').hide()
+                    iWantLogin()
+                    $('.errorForm').text('You need to Login first').css('visibility', 'visible')
+                }
+            }
+    </script>
+</body>
+</html>
