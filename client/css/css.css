@@ -1,0 +1,15 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    width: 70%;
+    height: 80%;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.wrapper div {
+    background-color: aquamarine;
+}
