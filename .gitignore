@@ -1,0 +1,5 @@
+node_modules
+tailwind.config.js
+style.scss
+style.css.map
+tw.css

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap");
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.circle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #61dafb;
+  position: relative;
+  margin: 100px auto;
+  -webkit-transform: rotateZ(30deg);
+          transform: rotateZ(30deg);
+}
+
+.circle .ovals {
+  display: block;
+  width: 76px;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 10px solid #61dafb;
+  border-radius: 50%;
+  position: relative;
+  top: -80px;
+  left: -17px;
+}
+
+.circle .ovals::before, .circle .ovals::after {
+  content: '';
+  display: block;
+  width: 76px;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 10px solid #61dafb;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  -webkit-transform-origin: 38px 100px;
+          transform-origin: 38px 100px;
+}
+
+.circle .ovals::before {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.circle .ovals::after {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.random-page {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
