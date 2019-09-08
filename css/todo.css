@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: url("https://images.unsplash.com/reserve/D9xlw7UxTBqQw5sLf8cJ_reef%20insp-72.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+
+
+}
+
+
+nav img {
+    left: 100px;
+    position: absolute;
+    height: 50px;
+}
+
+nav h1 {
+    left: 40px;
+    position: absolute;
+    font-family: 'Poppins', serif;
+    color: #0009;
+}
+
+.nav-link .text-container ul li,
+a,
+.nav-text {
+    position: relative;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    color: #0009;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    top: 2px;
+
+}
+
+.nav-link .text-container ul li:hover,
+a:hover,
+.nav-text:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0002;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .box {
+    top: 100px;
+    background-color: #0002;
+    margin-left: 50px;
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.container .isi {
+    position: relative;
+    float: right;
+    right: 250px;
+    top: 130px;
+}
+
+.container .isi img {
+    height: 200px;
+    width: 200px;
+    box-shadow: 7px 9px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container .content {
+    position: relative;
+    top: 150px;
+}
+
+.container .content h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 50px;
+}
+
+.container .content h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.container .content p {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    text-align: justify;
+    font-size: 10px;
+    height: 400px;
+    width: 400px;
+    left: 250px;
+    top: 15px;
+    position: relative;
+}
+
+#puter {
+    background-color: #0002;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#puter h4 {
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: #0009;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+#puter h4:hover {
+    color: white;
+}
+
+#puter .middle h5 {
+    color: #0009;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#puter .middle {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#puter .middle h5:hover {
+    color: white;
+}
+
+#puter a {
+    float: left;
+    color: #0009;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#puter a:hover {
+    display: inline-block;
+    color: white;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.container {
+    height: 400px;
+    position: relative;
+    background-color: #0002;
+    top: 100px;
+    margin: 0 400px;
+    border-radius: 25px;
+}
+
+.header {
+    background-color: #0006;
+    position: relative;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#listMe {
+    text-align: center;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+#listMe :nth-child(odd) {
+    background: #0002;
+}
+
+#listMe :nth-child(even) {
+    background: #0004;
+}
+
+
+
+#listMe li:hover {
+    cursor: pointer;
+}
+
+#listMe .checkMe {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#inputMe {
+    background-color: white;
+    cursor: pointer;
+    color: #0009;
+    border-color: white;
+    outline-color: white;
+    height: 15px;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.addMe {
+    cursor: pointer;
+}
+
+.closeMe {
+    position: absolute;
+    left: 0px;
+}
+
+#listMe span:hover {
+    background-color: #0009;
+}
+
+::placeholder {
+    color: #0009
+}
