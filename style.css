@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Open Sans', 'Sans serif';
+  color: #7f8c8d;
+}
+a{
+  text-decoration: none;
+}
+header{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, .1);
+}
+header > div{
+  max-width: 1000px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+header .logo h1{
+  background-color: #3498db;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18pt;
+  padding: 10px 22px;
+  border-radius: 20px 5px 20px 5px;
+  border: 3px solid #fff;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, .15);
+  cursor: pointer;
+}
+header .logo h1:hover{
+  background-color: #7ec4f3;
+}
+nav.menu{
+  margin-left: 100px;
+}
+nav.menu ul li{
+  display: inline-block;
+  margin-right: 50px;
+}
+nav.menu ul li a{
+  color: #7f8c8d;
+  padding-bottom: 10px;
+}
+nav.menu ul li a:hover{
+  color: #3498db;
+}
+nav.menu ul li a.active{
+  color: #3498db;
+  border-bottom: 3px solid #3498db;
+  font-weight: 800;
+}
+footer{
+  background-color: #0D2236;
+}
+footer div{
+  max-width: 1000px;
+  margin: 0px auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+footer div ul li{
+  display: inline-block;
+  padding: 10px;
+}
+footer div ul li a{
+  color: #3498db;
+}
+
+@media only screen and (max-width: 520px){
+  nav.menu{
+    margin-left: 40px;
+  }
+  nav.menu ul li{
+    margin-right: 30px;
+  }
+}

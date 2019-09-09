@@ -1,0 +1,48 @@
+@media only screen and (max-width: 710px){
+  section.hero > div .right{
+    display: none;
+  }
+<<<<<<< HEAD
+  body{
+    background-color: red;
+  }
+=======
+>>>>>>> 27d0f50f020d11a8aeaf2c32fcac07c8ac201e31
+  section.hero > div .left{
+    text-align: center;
+    max-width: 500px;
+    margin: 0px auto;
+  }
+  .hero-background::before{
+    display: none;
+  }
+  section.skill > div{
+    flex-direction: column;
+  }
+  section.skill img{
+    margin: 0 auto;
+  }
+  section.skill > div h2{
+    text-align: center;
+  }
+  section.skill > div > div > p{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 610px){
+  .about-item{
+    flex-direction: column;
+    max-width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .about-item > div{
+    margin-bottom: 50px;
+  }
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 27d0f50f020d11a8aeaf2c32fcac07c8ac201e31
