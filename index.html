@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('../image/pexels-photo-747964.jpeg')
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="opacity: 0.5"> 
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Add Story</h1>
+        <form id="add-click" >
+            <div class="form-group" >
+                <input type="text" placeholder="isi title...." class="form-control" style="opacity: 0.6" id="title">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" style="opacity: 0.6" id="des" ></textarea>
+            </div>
+            <div class="form-group">
+                <input type="file" style="opacity: 5" id="img">
+            </div>
+            <div class="form=group">
+                <input type="submit" onclick="jalan()">
+            </div>
+        </form>
+    </div>
+    <br><br><br>
+    <div id="image" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row pl-4" id="list-image">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <script src="https://code.jquery.com/jquery-3.4.1.js"
+     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+     
+     </script>
+    <script>
+        $(document).ready(function() {
+  
+  
+  
+        })
+        function jalan(){
+            event.preventDefault();
+            let title = document.getElementById('title').value
+        let des = document.getElementById('des').value
+        let image = document.getElementById('img').value
+        console.log(image.slice(12))
+        console.log(title , des , image)
+            $('#list-image').append(`
+            <div class="card p-2" style="width: 18rem;">
+                <img class="card-img-top" src="./image/${image.slice(12)}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">${title}</h5>
+                <p class="card-text">${des}</p>
+                <a href="/" class="btn btn-primary">Buy Ticket</a>
+                </div>
+            </div>
+            `)
+        }
+        // $('#add-click').submit(function(){
+        // event.preventDefault();
+        // let title = document.getElementById('title').value
+        // let des = document.getElementById('des').value
+        // let image = document.getElementById('img').value
+        // console.log(title , des , image)
+        // })
+        // .done(function(data){
+        //     $('#list-image').append(`
+        //     <div class="card p-2" style="width: 18rem;">
+        //         <img class="card-img-top" src="./image/${image}" alt="Card image cap">
+        //         <div class="card-body">
+        //         <h5 class="card-title">${title}</h5>
+        //         <p class="card-text">${des}</p>
+        //         <a href="/" class="btn btn-primary">Buy Ticket</a>
+        //         </div>
+        //     </div>
+        //     `)
+        // })
+        // .fail(function(){
+        //     console.log('ERRRO')
+        // })
+        
+    </script>
+</body>
+</html>
