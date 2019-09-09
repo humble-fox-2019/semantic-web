@@ -9,9 +9,8 @@ function getAllCompany(){
     .done(data=>{
         putData(data)
     })
-    .fail(err =>[
-        console.log(err)
-    ])
+    .fail(err =>{        console.log(err)
+    })
 }
 
 function putData(data){
@@ -19,7 +18,7 @@ function putData(data){
     $.each(data, function(index, value){
         $('.wrapper11').append(
             `
-            <div class="box${index}">
+            <div class="boxCompany${index}">
                 <a href="#" id="company${index}">${value.name}</a>
                 <p id="companyAddress${index}">${value.address}</p>
                 <a href="#" id="editCompany${index}">Edit</a>
@@ -29,7 +28,7 @@ function putData(data){
         )
         $(`#removeCompany${index}`).click(()=>{
             removeCompany(value._id)
-            $(`.box${index}`).remove()
+            $(`.boxCompany${index}`).remove()
         })
         $(`#editCompany${index}`).click(()=>{
             $('.secondPage').hide()
@@ -40,9 +39,9 @@ function putData(data){
                 patchCompany(value._id)
             })
         })
-        // $(`#company${index}`).click(()=>{
-
-        // })
+        $(`#company${index}`).click(()=>{
+            getAllItem(value._id)
+        })
     })
 }
 
@@ -64,9 +63,9 @@ function registerCompany(){
         getAllCompany()
         $('.secondPage').show()
     })
-    .fail(err =>[
+    .fail(err =>{
         console.log(err)
-    ])
+    })
 }
 function doneRegisterCompany(){
     $('#nameCompany').val("")
@@ -94,9 +93,9 @@ function patchCompany(_id){
         getAllCompany()
         $('.secondPage').show()
     })
-    .fail(err =>[
+    .fail(err =>{
         console.log(err)
-    ])
+    })
 }
 function removeCompany(_id){
     $.ajax({
@@ -109,9 +108,9 @@ function removeCompany(_id){
     .done(data=>{
 
     })
-    .fail(err =>[
+    .fail(err =>{
         console.log(err)
-    ])
+    })
 }
 
 function openRegisterCompany(){

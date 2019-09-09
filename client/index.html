@@ -47,7 +47,7 @@
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
     
     </div>
-    
+ 
     <div class="secondPage">
         <ul class="navbar">
             <li>
@@ -68,6 +68,7 @@
                 <div class="wrapper12">
 
                 </div>
+                <a href="#" id="openRegisterItem" style="display: none;">Register new Item</a>
             </div>
         </div>
     </div>
@@ -89,13 +90,27 @@
                 <a href="#" id="editCompanySubmit">Submit</a>
         </div>
         <div class="registerItem"  style="display: none;">
-
+                <form action="">
+                    <label for="nameItem">Item name</label>
+                    <input type="text" id="nameItem">
+                    <label for="apriceItem">Item's price</label>
+                    <input type="text" id="priceItem">
+                    <a href="#" onclick="registerItem()">Submit</a>
+                </form>
         </div>
         <div class="editItem"  style="display: none;">
-            
+                <form action="">
+                    <input type="hidden" id="companyId" value="">
+                    <label for="nameItemEdit">Item name</label>
+                    <input type="text" id="nameItemEdit">
+                    <label for="priceItemEdit">Item's price</label>
+                    <input type="text" id="priceItemEdit">
+                    <a href="#" id="editItemSubmit">Submit</a>
+                </form>
         </div>
 
     </div>
+    <script src="./js/item.js"></script>
     <script src="./js/company.js"></script>
     <script src="./js/register.js"></script>
     <script src="./js/login.js"></script>
